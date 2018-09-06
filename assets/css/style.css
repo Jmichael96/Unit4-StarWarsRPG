@@ -1,0 +1,31 @@
+body {
+    background-image: url('../images/storm.jpg');
+    background-size: cover;
+    font-family: 'Iceberg', cursive;
+}
+h1 {
+    font-size: 72px;
+    margin: 0;
+    text-align: center;
+    color: rgb(0,0,0);
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.character {
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+.character-name {
+    color: white;
+    text-align: center;
+}
+.character-health {
+    color: white;
+    text-align: center;
+}
+
