@@ -3,7 +3,7 @@
 Click the link to play! https://jmichael96.github.io/Unit4-StarWarsRPG/
 
 
-    This project is a game that allows to choose your character, select an enemy of your choosing, and 
+This project is a game that allows to choose your character, select an enemy of your choosing, and 
 
 defeat every enemy thats left. Make sure you choose your enimies wisely!
 
