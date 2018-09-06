@@ -91,9 +91,9 @@ $(document).ready(function() {
       // Function which handles restarting the game after victory or defeat.
       var restartGame = function (resultMessage) {
         // When the Restart button is clicked it reloads the whole page
-        var restart = $("<button>Restart</button>").click(function () {
-          location.reload();
-          restart.setAttribute('style', 'top:100px;left:100px;' )
+        var restart = $("<button>Restart</button>").click(function (){
+        location.reload();
+        restart.setAttribute()
         });
     
         // Build div that will display the victory or defeat message.
@@ -102,6 +102,9 @@ $(document).ready(function() {
         // Render the restart button and victory or defeat message to the page.
         $("body").append(gameState);
         $("body").append(restart);
+        $("button").css({"font-size": "50px"});
+        $("body").css({"color": "white", "font-size": "25px",});
+        $("button").css({"width": "230px", "border-radius": "10px",})
       };
     
       // Function to clear the game message section
@@ -183,7 +186,7 @@ $(document).ready(function() {
             // We call the restartGame function to allow the user to restart the game and play again.
             if (attacker.health <= 0) {
               clearMessage();
-              restartGame("You have been defeated...GAME OVER!!!");
+              restartGame("You have been defeated...GAME OVER!");
               $("#attack-button").off("click");
               console.log(attacker.health + " You died! Restart")
             }
@@ -204,7 +207,7 @@ $(document).ready(function() {
             if (killCount >= combatants.length) {
               clearMessage();
               $("#attack-button").off("click");
-              restartGame("You Won!!!! GAME OVER!!!");
+              restartGame("You Won! GAME OVER!");
             }
           }
           // Increment turn counter. This is used for determining how much damage the player does.

@@ -9,6 +9,26 @@ h1 {
     text-align: center;
     color: rgb(0,0,0);
 }
+h2 {
+    color: rgb(128,0,0);
+    font-weight: bolder;
+}
+#fight-section {
+    font-size: 45px;
+}
+h3{
+    color:rgb(64,0,0);
+    font-weight: bolder;
+    font-size: 35px;
+}
+#game-message {
+    color:  rgb(128,0,0);
+    font-weight: bolder;
+    font-size: 30px;
+}
+button {
+    background-color: rgb(128,0,0);
+}
 img {
     width: 150px;
     height: 150px;
