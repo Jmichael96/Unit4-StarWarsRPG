@@ -93,7 +93,6 @@ $(document).ready(function() {
         // When the Restart button is clicked it reloads the whole page
         var restart = $("<button>Restart</button>").click(function (){
         location.reload();
-        restart.setAttribute()
         });
     
         // Build div that will display the victory or defeat message.
