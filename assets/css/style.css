@@ -3,16 +3,19 @@ body {
     background-size: cover;
     font-family: 'Iceberg', cursive;
 }
+/* only styles the h1 */
 h1 {
     font-size: 72px;
     margin: 0;
     text-align: center;
     color: rgb(0,0,0);
 }
+/* styles both h2 elements */
 h2 {
     color: rgb(128,0,0);
     font-weight: bolder;
 }
+/* the word sizing for the fight section */
 #fight-section {
     font-size: 45px;
 }
@@ -21,11 +24,13 @@ h3{
     font-weight: bolder;
     font-size: 35px;
 }
+/* game board message while fighting */
 #game-message {
     color:  rgb(128,0,0);
     font-weight: bolder;
     font-size: 30px;
 }
+/* attack button */
 button {
     background-color: rgb(128,0,0);
 }
