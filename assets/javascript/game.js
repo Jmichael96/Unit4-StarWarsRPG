@@ -2,31 +2,31 @@ $(document).ready(function() {
     var characters = {
         "Darth Vader": {
           name: "Darth Vader",
-          health: 125,
-          attack: 8,
+          health: 130,
+          attack: 5,
           imageUrl: "assets/images/DarthVader.jpg",
-          enemyAttackBack: 12
+          enemyAttackBack: 14
         },
         "Darth Maul": {
           name: "Darth Maul",
-          health: 150,
-          attack: 14,
+          health: 90,
+          attack: 9,
           imageUrl: "assets/images/darthmaul.jpg",
-          enemyAttackBack: 5
+          enemyAttackBack: 16
         },
         "Yoda": {
           name: "Yoda",
-          health: 120,
-          attack: 8,
+          health: 90,
+          attack: 10,
           imageUrl: "assets/images/yoda.jpg",
-          enemyAttackBack: 20
+          enemyAttackBack: 12
         },
         "Boba Fett": {
           name: "Boba Fett",
-          health: 170,
-          attack: 7,
+          health: 133,
+          attack: 5,
           imageUrl: "assets/images/bobafett.jpg",
-          enemyAttackBack: 25
+          enemyAttackBack: 13
         }
       };
 
@@ -41,6 +41,10 @@ $(document).ready(function() {
       // Tracks number of defeated opponents.
       var killCount = 0;
     
+      var losingSound = new Audio("./assets/sound/lost.mp3")
+      var victorySound = new Audio("./assets/sound/emperial.mp3")
+      var clickAttack = new Audio("./assets/sound/Light-Saber.mp3");
+
       // This function will render a character card to the page.
       // The character rendered and the area they are rendered to. their status is determined by the arguments.
       var renderCharacter = function (character, renderArea) {
@@ -156,6 +160,7 @@ $(document).ready(function() {
     
       // When you click the attack button, run the following game logic...
       $("#attack-button").on("click", function () {
+        clickAttack.play();
         // If there is a defender, combat will occur.
         if ($("#defender").children().length !== 0) {
           // Creates messages for our attack and our opponents counter attack.
@@ -188,6 +193,7 @@ $(document).ready(function() {
               restartGame("You have been defeated...GAME OVER!");
               $("#attack-button").off("click");
               console.log(attacker.health + " You died! Restart")
+              losingSound.play();
             }
           }
           else {
@@ -207,6 +213,7 @@ $(document).ready(function() {
               clearMessage();
               $("#attack-button").off("click");
               restartGame("You Won! GAME OVER!");
+              victorySound.play();
             }
           }
           // Increment turn counter. This is used for determining how much damage the player does.
