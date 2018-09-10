@@ -5,7 +5,7 @@
 
 This project is a game that allows to choose your character, select an enemy of your choosing, and 
 
-defeat every enemy that's left. Make sure you choose your enimies wisely!
+defeat the remaining enemies. Make sure you choose your enimies wisely, as that is the biggest challenge in this game!
 
 As the game loads, images will appear with the character's name and health. Each player's health, 
 
@@ -13,6 +13,6 @@ attack power, and counter attack varies, but your character's power doubles over
 
 chose your ally you will be prompted to choose your first enemy. They will appear in the 'battle area' 
 
-and you may start clicking the attack button. If you defeated him you will chose the next oponent and 
+and you may start clicking the attack button. If you defeated him you will choose the next oponent and 
 
-repeat the process till all enemies are defeated. 
+repeat the process till all enemies are defeated. GOOD LUCK!
