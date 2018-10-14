@@ -1,6 +1,6 @@
 # Unit4-StarWarsRPG
 
-## Click the link to play! https://jmichael96.github.io/Unit4-StarWarsRPG/
+## Click the link to play! [Star Wars](https://jmichael96.github.io/Unit4-StarWarsRPG/)
 
 
 This project is a game that allows to choose your character, select an enemy of your choosing, and 
