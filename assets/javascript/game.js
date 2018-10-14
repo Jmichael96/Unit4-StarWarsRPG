@@ -41,8 +41,8 @@ $(document).ready(function() {
       // Tracks number of defeated opponents.
       var killCount = 0;
     
-      var losingSound = new Audio("./assets/sound/lost.mp3")
-      var victorySound = new Audio("./assets/sound/emperial.mp3")
+      var losingSound = new Audio("./assets/sound/lost.mp3");
+      var victorySound = new Audio("./assets/sound/emperial.mp3");
       var clickAttack = new Audio("./assets/sound/Light-Saber.mp3");
 
       // This function will render a character card to the page.
@@ -62,7 +62,7 @@ $(document).ready(function() {
         // Loop through the characters object and call the renderCharacter function on each character to render their card.
         for (var key in characters) {
           renderCharacter(characters[key], "#characters-section");
-        }
+        };
       };
     
       // remember to run the function here
@@ -81,7 +81,7 @@ $(document).ready(function() {
         for (var i = 0; i < enemyArr.length; i++) {
           renderCharacter(enemyArr[i], "#available-to-attack-section");
           console.log("enemies to attack " + enemyArr);
-        }
+        };
       };
     
       // Function to handle rendering game messages.
@@ -112,16 +112,15 @@ $(document).ready(function() {
     
       // Function to clear the game message section
       var clearMessage = function () {
-        var gameMessage = $("#game-message");
-    
-        gameMessage.text("");
+      var gameMessage = $("#game-message");
+          gameMessage.text("");
       };
     
       // On click event for selecting our character.
       $("#characters-section").on("click", ".character", function () {
         // Saving the clicked characters name.
         var name = $(this).attr("data-name");
-        console.log("You chose " + name + " as your ally")
+        console.log("You chose " + name + " as your ally");
         // If a player character has not yet been chosen...
         if (!attacker) {
           // populate attacker with the selected characters information.
@@ -130,8 +129,8 @@ $(document).ready(function() {
           for (var key in characters) {
             if (key !== name) {
               combatants.push(characters[key]);
-            }
-          }
+            };
+          };
     
           // Hide the character select div.
           $("#characters-section").hide();
@@ -139,7 +138,7 @@ $(document).ready(function() {
           // Then render our selected character and our combatants.
           updateCharacter(attacker, "#selected-character");
           renderEnemies(combatants);
-        }
+        };
       });
     
       // Creates an on click event for each enemy.
@@ -155,7 +154,7 @@ $(document).ready(function() {
           // remove element as it will now be a new defender
           $(this).remove();
           clearMessage();
-        }
+        };
       });
     
       // When you click the attack button, run the following game logic...
@@ -223,6 +222,6 @@ $(document).ready(function() {
           // If there is no defender, render an error message.
           clearMessage();
           renderMessage("No enemy here.");
-        }
+        };
       });
     });
