@@ -28,3 +28,5 @@ chose your ally you will be prompted to choose your first enemy. They will appea
 and you may start clicking the attack button. If you defeated him you will choose the next oponent and 
 
 repeat the process till all enemies are defeated. GOOD LUCK!
+![rpg](https://user-images.githubusercontent.com/40511023/48927157-7e3af480-ee99-11e8-988e-7641ec6daecd.PNG)
+
